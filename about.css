@@ -1,0 +1,199 @@
+/* Importing Google font - Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, #175d69 23%, #330c43 95%);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #175d69; /* Set the background color here */
+
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.navbar .logo a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar .links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar .links a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 0;
+  transition: 0.2s ease;
+}
+
+.navbar .links a:hover {
+  color: #47b2e4;
+}
+
+.navbar .buttons a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 15px 0;
+  transition: 0.2s ease;
+}
+
+.navbar .buttons a:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Style main content */
+main {
+    padding: 100px;
+}
+
+/* Style sections */
+.portfolio-section {
+    text-align: center;
+    font-size: 2em; /* Adjust the size as needed */
+    color: #fff;
+}
+
+/* Style paragraph text */
+p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Style unordered list */
+ul {
+    list-style-type: none;
+}
+
+/* Style footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+.hero-section {
+  justify-content: space-evenly;
+  height: 20vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-section .hero {
+  max-width: 100%;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #c9c7c7;
+}
+
+.hero-section .buttons {
+  margin-top: 20px;
+}
+
+.hero-section .buttons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+  display: inline-block;
+}
+
+.hero-section .buttons a:not(:last-child) {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.buttons .join {
+  background-color: #47b2e4;
+}
+
+.hero-section .buttons a:hover {
+  background-color: #47b2e4;
+}
+
+
+.underline {
+    text-decoration: underline;
+}
+
+
+.social-links ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.social-links ul,
+.social-links li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.social {
+    width: 30px; /* Increased size */
+    height: 30px; /* Increased size */
+    margin: 10px; /* Added margin for spacing */
+    transition: transform 0.3s ease-in-out; /* Added hover effect */
+}
+
+.social:hover {
+    transform: scale(1.2); /* Scale effect on hover */
+}
+
+.instagram {
+    background-color: #bc2a8d; /* Instagram pink */
+}
+
+.linkedin {
+    background-color: #0077b5; /* LinkedIn blue */
+}
+
+.github {
+    background-color: #333; /* GitHub black */
+    color: #fff; /* Text color */
+    border-radius: 50%; /* Make GitHub icon circular */
+    padding: 8px; /* Added padding for better visibility */
+}

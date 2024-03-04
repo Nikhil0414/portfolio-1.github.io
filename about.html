@@ -1,0 +1,136 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nikhil's Portfolio</title>
+    <link href="{% static '/css/about.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+  <body>
+
+    <header class="header">
+      <nav class="navbar">
+        <h2 class="logo"><a href="#">Nikhil's Portfolio</a></h2>
+        <ul class="links">
+          <li><a href="/ ">Home</a></li>
+            <li><a href="">About</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/connect">Connect</a></li>
+        </ul>
+      </nav>
+    </header>
+
+        <main>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Passionate about leveraging data to drive software solutions, I am a final-year M.Tech Software Engineering student at Vellore Institute of Technology. As a Data-Driven Software Engineer and AI & ML enthusiast, I thrive on transforming ideas into impactful projects. Eager to contribute to the ever-evolving tech landscape, I am open to exciting opportunities that align with my passion. Let's connect and explore the possibilities!</p>
+                     <hr>
+            <h2>Personal Info</h2>
+
+            <ul>
+                <li>Email: nikhilkalkhanda@gmail.com</li>
+                <li>Phone: 8368339387</li>
+                <li>Location: New Delhi, India</li>
+                <ul class="social-links">
+					<li>
+						<a href="https://www.linkedin.com/in/nikhil761401/">
+							<img class="social" src="{% static 'images/linkedin.png' %}" alt="LinkedIn">
+							<span>LinkedIn</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/Nikhil0414">
+							<img class="social" src="{% static 'images/github-logo.png' %}" alt="GitHub">
+							<span>GitHub</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://leetcode.com/Nikhil_10/">
+							<img class="social" src="{% static 'images/LeetCode_logo_black.png' %}" alt="LeetCode">
+							<span>LeetCode</span>
+						</a>
+					</li>
+                </ul>
+            </ul>
+        </div>
+    </section>
+
+            <hr>
+
+            <h2>Skills</h2>
+            <section class="hero-section">
+      <div class="hero">
+           <div class="buttons">
+            <a href="" class="join">Tableau</a>
+            <a href="" class="join">TensorFlow</a>
+            <a href="" class="join">Google Colab</a>
+            <a href="" class="join">DSA</a>
+            <a href="" class="join">Flask</a>
+            <a href="" class="join">CSS3</a>
+            <a href="" class="join">Scikit-learn</a>
+            <a href="" class="join">JavaScript</a>
+        </div>
+        <div class="buttons">
+            <a href="" class="join">Django</a>
+            <a href="" class="join">HTML5</a>
+            <a href="" class="join">Git</a>
+            <a href="" class="join">Jupyter Notebook</a>
+            <a href="" class="join">SQL</a>
+            <a href="" class="join">Numpy</a>
+            <a href="" class="join">Pandas</a>
+            <a href="" class="join">Java</a>
+            <a href="" class="join">CSS</a>
+        </div>
+      </div>
+    </section>
+
+            <hr>
+
+     <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-item">
+            <h3 class="">Housing Price Prediction</h3>
+                <p>Supervised machine learning algorithms (07/2023 - 11/2023)</p>
+                <ul>
+                    <li> + Built a linear regression model using scikit-learn and the Bangalore home prices dataset from Kaggle.</li>
+                    <li> + Developed a Python Flask server to serve HTTP requests using the saved model.</li>
+                    <li> + Created a website using HTML, CSS, and JavaScript that allowed users to input home features (location, sqft, bhk, etc.) and retrieved the predicted price from the Flask server.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-item">
+                <h3 class="">Housing Price Prediction</h3>
+                <p>Python (07/2022 - 11/2022)</p>
+                <ul>
+                    <li> + Connects to TOR and onion services via a manual proxy and browsing the dark web.</li>
+                    <li> + The crawler for the dark web gathers all the data, retrieves all the links, filters the tags, and will look for any particular keyword.</li>
+                    <li> + Organises the data into user-specific data visualisations and saves the data as a JSON file.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-item">
+                <h3 class="">Housing Price Prediction</h3>
+                <p>Java (08/2020 - 01/2021)</p>
+                <ul>
+                    <li> + A console that accomplishes networking tasks on a single screen with user-defined commands.</li>
+                    <li> + Features like sending emails with just three commands, private and group chat using TCP and UDP sockets.</li>
+                    <li> + Includes downloading and extracting info of files with URL, creation or deletion of cookies.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+            <hr>
+
+    <!-- More sections for projects, skills, certificates, languages, interests, internships -->
+        </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nikhil. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

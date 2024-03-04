@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nikhil's Portfolio</title>
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        /* Add custom styles here if needed */
+    </style>
+</head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <h2 class="logo"><a href="#">Nikhil's Portfolio</a></h2>
+        <ul class="links">
+          <li><a href="">Home</a></li>
+            <li><a href="about">About</a></li>
+          <li><a href="portfolio">Portfolio</a></li>
+          <li><a href="connect">Connect</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <div class="hero">
+        <h3>Hi There!!</h3>
+        <h1>I'M NIKHIL</h1>
+        <h4>Python Developer (AI & ML Enthusiast)</h4>
+        <p>
+          Passionate about leveraging data to drive software solutions, I am a final-year M.Tech Software Engineering student at Vellore Institute of Technology. As a Data-Driven Software Engineer and AI & ML enthusiast, I thrive on transforming ideas into impactful projects. Eager to contribute to the ever- evolving tech landscape, I am open to exciting opportunities that align with my passion. Let's connect and explore the possibilities!
+        </p>
+        <div class="buttons">
+            <a href="{% url 'about' %}" class="join">More About Me</a>
+            <a href="{% static 'pdf/Nikhil_Resume.pdf' %}" class="learn" download>Download CV</a>
+        </div>
+      </div>
+      <div class="img">
+        <img id="profile-pic" src="{% static 'images/pfp101.png' %}" >
+      </div>
+    </section>
+  </body>
+</html>
